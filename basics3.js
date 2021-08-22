@@ -90,9 +90,46 @@ var nesum=newMap.reduce((sum, val)=>sum+val,0);
 console.log(nesum);
 
 //chaining
-var scores1=[22,33,44,55,23,35245,65645]
+var scores1=[422,003,33,44,55,23,35245,65645]
 var chainings=scores1.filter(scores1=>scores1%2==0).map(scores1=>scores1*3).reduce((sum, val)=>sum+val,0)
 console.log(chainings);
+
+
+
+
+
+
+
+
+
+
+
+// array sorting
+
+let fruits = ["banana", "mango","apple"]
+fruits.sort()
+console.log(fruits);
+//sorting on numbers is unreliable with sort()
+console.log(scores1.sort());
+
+// sort() custom method
+scores1.sort(function(a,b){
+    return a-b;
+})
+console.log(scores1);
+
+// using anonymous function
+//buble sort in recurcive manner
+console.log(scores1.sort((a,b)=> a-b))
+//ascending and desending order
+console.log(fruits.sort());
+console.log(fruits.reverse());
+//buble sort in recurcive manner for reverse 
+console.log(scores1.sort((a,b)=> b-a))
+
+
+
+
 
 
 
